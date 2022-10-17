@@ -75,7 +75,7 @@ def PWI(docs, list, num_words=3):
     p_d = 1 / len(docs)
 
     docs_scores = get_doc_scores(docs, list)
-    print(len(docs))
+
     for i, doc in enumerate(docs):
 
         topic_words = []
