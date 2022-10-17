@@ -20,3 +20,9 @@ import PWI
 print("PWI:", PWI.PWI(data, list, num_words=3))
 
 You could also find a example in the PWI.py, in its main function.
+
+
+# More information about PWI
+Commonly, a higher PWI value means better relevance between documents and topics. But a higher value does not always mean better quality. 
+Since the PWI is based on cosine similarity, some bad topics will also lead to a high cosine similarity. For example, topic ['I', 'am', 'the'] will result in a high PWI value, but this is not a good topic.
+To avoid these problems, users should apply a stop-word strategy to their own code. 
